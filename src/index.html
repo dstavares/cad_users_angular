@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Cadusuario</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script>
+    function formatar(mascara, documento){
+     var i = documento.value.length;
+     var saida = mascara.substring(0,1);
+     var texto = mascara.substring(i)
+
+     if (texto.substring(0,1) != saida){
+      documento.value += texto.substring(0,1);
+     }
+    }
+   </script>
+
+</head>
+
+
+<body>
+  <app-root></app-root>
+</body>
+</html>
